@@ -5,6 +5,9 @@
     <body>
         <input id="todo-title" type="text">
         <button onclick="addTodo()">Press me</button>
+        
+
+        <div id="todo-list"></div>
   
 
     <script>
@@ -24,6 +27,9 @@
 
 
         function render(){
+            // reset list before adding 
+
+            document.getElementById('todo-list').innerHTML = '';
             todos.forEach(function (todoTitle) {
             let element = document.createElement("div");
             element.innerText = todoTitle;
