@@ -1,25 +1,32 @@
 <html>
+    <head>
+        <title>My Todo App</title>
+    </head>
     <body>
-        <head>
-            <title>My Todo App</title>
-        </head>
-    <button>Press me</button>
+        <input id="todo-title" type="text">
+        <button onclick="addTodo()">Press me</button>
   
 
     <script>
-        let todo1 = " Buy me Pizza"
-        let todo2 = " Peel the Mango"
-        let todo3 = " Consume the  Pizza"
 
-        function addTodo (todoTitle){
+        let todos = [ " Buy me Pizza", " Peel the Mango", " Consume the  Pizza", "newOne" ]
+
+        todos.forEach(function (todoTitle) {
             let element = document.createElement("div");
             element.innerText = todoTitle;
             document.body.appendChild(element);
+
+        })
+
+        function addTodo() {
+            let textbox = document.getElementById('todo-title');
+            let title = textbox.value;
+
+            todos.push(title)
+
         }
 
-        addTodo(todo1)
-        addTodo(todo2)
-        addTodo(todo3)
+        
 
 
         
