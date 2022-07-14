@@ -11,12 +11,7 @@
 
         let todos = [ " Buy me Pizza", " Peel the Mango", " Consume the  Pizza", "newOne" ]
 
-        todos.forEach(function (todoTitle) {
-            let element = document.createElement("div");
-            element.innerText = todoTitle;
-            document.body.appendChild(element);
-
-        })
+       render()
 
         function addTodo() {
             let textbox = document.getElementById('todo-title');
@@ -24,6 +19,17 @@
 
             todos.push(title)
 
+            render()
+        }
+
+
+        function render(){
+            todos.forEach(function (todoTitle) {
+            let element = document.createElement("div");
+            element.innerText = todoTitle;
+            document.body.appendChild(element);
+
+        })
         }
 
         
