@@ -14,3 +14,10 @@
 // } else {
 //     console.log(" That's it .. ")
 // }
+
+person = {
+    name : "Nana",
+    age: 25,
+    height: 30
+};
+console.log (person)
