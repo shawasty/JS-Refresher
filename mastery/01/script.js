@@ -15,9 +15,15 @@
 //     console.log(" That's it .. ")
 // }
 
-person = {
-    name : "Nana",
-    age: 25,
-    height: 30
-};
-console.log (person)
+// person = {
+//     name : "Nana",
+//     age: 25,
+//     height: 30
+// };
+// console.log (person)
+
+// let date = new Date();
+
+// console.log(typeof date)
+
+
