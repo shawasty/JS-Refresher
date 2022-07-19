@@ -34,3 +34,22 @@
 // }
 
 
+// function square (num){
+//     return num * num
+// }
+// // let res = square(10)
+// console.log(square(10))
+
+// const square = (num) => {
+//     return num * num
+// }
+// let res = square(5)
+
+// console.log(res)const nana = ()
+
+
+// const nana = (as) => {
+//     return as *5
+// }
+// let res = nana(30)
+// console.log(res)
