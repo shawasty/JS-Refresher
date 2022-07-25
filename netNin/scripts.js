@@ -25,8 +25,31 @@
 
 // const greet = ()=> "Hello, world"
 
-let cars = ["volvo","Audi","Mercedes","BMW", "5"]
+// let cars = ["volvo","Audi","Mercedes","BMW", "5"]
 
-cars.forEach((person, index)=>{
-    console.log(index, person)
-})
+// cars.forEach((person, index)=>{
+//     console.log(index, person)
+// })
+let user = {
+    name: "luigi",
+    age: 30,
+    email: "g@gmail",
+    blogs:["mine","hghgg"],
+    login(){
+        console.log("user logged in")
+    },
+    logout(){
+        console.log("user logged out")
+    },
+    logBlogs(){
+        this.blogs.forEach(blog => {
+            console.log(blog)
+        })
+    }
+}
+// console.log(user)
+// console.log(user.name)
+// user.login()
+// user.logout()
+// console.log(this)\
+user.logBlogs()
