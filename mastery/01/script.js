@@ -48,8 +48,10 @@
 // console.log(res)const nana = ()
 
 
-// const nana = (as) => {
-//     return as *5
-// }
-// let res = nana(30)
-// console.log(res)
+const nana = (as) => {
+    return as *5
+}
+let res = nana(30)
+console.log(res)
+
+
